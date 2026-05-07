@@ -1,0 +1,105 @@
+/* ==========================================================================
+   ESTILO PERSONALIZADO - PÁGINA DE CATÁLOGO EXPANDIDO
+   ========================================================================== */
+
+:root {
+    --primary-yellow: #ffc107;
+    --dark-grey: #212529;
+    --light-grey: #f8f9fa;
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-grey);
+}
+
+/* Efecto en tarjetas de moto */
+.card-moto {
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card-moto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+/* Estilo para las imágenes de las tarjetas */
+.card-moto .card-img-top {
+    height: 250px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformar */
+    border-bottom: 2px solid #eee;
+}
+
+/* Títulos y precios en las tarjetas */
+.card-moto .card-title {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.card-moto .text-warning {
+    color: #e0a800 !important; /* Un amarillo ligeramente más oscuro para mejor lectura */
+}
+
+/* Estilo para las especificaciones cortas */
+.short-specs .list-group-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    border-color: #eee;
+    background-color: transparent;
+}
+
+.short-specs i {
+    color: var(--primary-yellow);
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+/* Personalización del Modal y la Tabla Comparativa */
+#modalTablaComparativa .modal-content {
+    background-color: #fff;
+}
+
+#modalTablaComparativa .table {
+    font-size: 0.95rem;
+}
+
+#modalTablaComparativa .table-dark {
+    background-color: var(--dark-grey);
+    border-color: #444;
+}
+
+#modalTablaComparativa th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+#modalTablaComparativa td {
+    border-color: #eee;
+}
+
+#modalTablaComparativa .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+
+#modalTablaComparativa .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón solicitado en la parte inferior */
+.btn-lg.btn-warning {
+    transition: var(--transition);
+}
+
+.btn-lg.btn-warning:hover {
+    transform: scale(1.05);
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* Footer */
+footer {
+    font-size: 0.85rem;
+}
