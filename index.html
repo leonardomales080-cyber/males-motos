@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Males Motors | Compra y Venta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo-pag1.css">
+    <link rel="icon" href="img/moto.venta1.avif" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-speedometer2"></i> MALES MOTORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="paginas/catalogo.html">Catálogo Completo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/vender.html">Adquiere tu Moto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto-final">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="motoCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#motoCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#motoCarousel" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/moto1.jpg" class="d-block w-100" alt="Aventura Total">
+                <div class="carousel-caption">
+                    <h2 class="display-4 fw-bold">Explora nuevos horizontes</h2>
+                    <p class="lead">Las mejores motos de aventura en Imbabura.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/moto2.webp" class="d-block w-100" alt="Supermoto Estilo">
+                <div class="carousel-caption">
+                    <h2 class="display-4 fw-bold">Estilo y Potencia</h2>
+                    <p class="lead">Domina la ciudad con nuestras Supermotos.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#motoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#motoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <main id="catalogo" class="container my-5">
+        <h2 class="text-center mb-5 fw-bold">Unidades Disponibles</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow border-0 h-100">
+                    <img src="img/moto.venta1.avif" class="card-img-top" alt="Moto Venta 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Adventure XR 650</h5>
+                        <p class="text-warning fw-bold fs-4">$10,500</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#modalVenta1">Ver Especificaciones</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow border-0 h-100">
+                    <img src="img/moto.venta2.jpg" class="card-img-top" alt="Moto Venta 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Supermoto Custom S2</h5>
+                        <p class="text-warning fw-bold fs-4">$12,000</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#modalVenta2">Ver Especificaciones</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow border-0 h-100">
+                    <img src="img/moto.venta3.jpg" class="card-img-top" alt="Moto Venta 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Street Scrambler 400</h5>
+                        <p class="text-warning fw-bold fs-4">$8,900</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#modalVenta3">Ver Especificaciones</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalVenta1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Especificaciones: Adventure XR 650</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Motor:</strong> 650cc Monocilíndrico</li>
+                        <li class="list-group-item"><strong>Frenos:</strong> Disco ABS en ambas ruedas</li>
+                        <li class="list-group-item"><strong>Extras:</strong> Maletas laterales incluidas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalVenta2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Especificaciones: Supermoto Custom S2</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Llantas:</strong> Pista 17" de alta adherencia</li>
+                        <li class="list-group-item"><strong>Escape:</strong> Sistema Akrapovic original</li>
+                        <li class="list-group-item"><strong>Suspensión:</strong> Invertida ajustable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalVenta3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Especificaciones: Street Scrambler 400</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Estilo:</strong> Neo-Retro / Scrambler</li>
+                        <li class="list-group-item"><strong>Iluminación:</strong> Sistema Full LED</li>
+                        <li class="list-group-item"><strong>Consumo:</strong> Alta eficiencia de combustible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contacto-final" class="py-5 bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-3 mb-4 mb-md-0 text-center">
+                    <img src="img/foto-perfil.jpg" alt="William Males" class="profile-img shadow">
+                </div>
+                <div class="col-md-9">
+                    <h2 class="fw-bold">Contacta con William Males</h2>
+                    <p class="lead text-secondary">Tu asesor experto en motocicletas en Imbabura.</p>
+                    <a href="paginas/vender.html" class="btn btn-warning fw-bold px-4 py-2">Solicitar Cotización</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
